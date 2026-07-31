@@ -1,23 +1,10 @@
-# Lauren Christensen Portfolio — Version 2
+# Lauren Christensen Portfolio — Version 2 Flat
 
-Static portfolio website with individual case-study pages.
+All files intentionally live in the repository root so GitHub browser uploads do not break CSS or navigation.
 
-## Upload
-Upload the CONTENTS of this folder to the root of the existing GitHub repository.
+Upload every file in this folder directly to the root of the existing GitHub repository.
 
-Expected root:
-- index.html
-- assets/
-- projects/
-- resume/
-- README.md
-
-## Vercel
-Framework preset: Other
-Build command: blank
-Output directory: blank
-
-## Replace before public launch
-- hello@laurenchristensen.com
-- LinkedIn placeholder link (#)
-- Resume PDF if needed
+Vercel:
+- Framework preset: Other
+- Build command: blank
+- Output directory: blank
