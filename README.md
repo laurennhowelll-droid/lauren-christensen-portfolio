@@ -1,8 +1,13 @@
-# Lauren Christensen Portfolio — Version 2 Flat
+# Lauren Christensen Portfolio — Version 3 Flat
 
-All files intentionally live in the repository root so GitHub browser uploads do not break CSS or navigation.
+Adds:
+- Lauren's headshot
+- White Poppy career progression timeline
+- Expanded ecommerce, web design, social media, lifecycle marketing, and leadership experience
+- Rosie Rue, HEAL Lab, and freelance photography/creative marketing experience
+- Existing individual case-study pages
 
-Upload every file in this folder directly to the root of the existing GitHub repository.
+Upload every file directly to the root of the existing GitHub repository.
 
 Vercel:
 - Framework preset: Other
