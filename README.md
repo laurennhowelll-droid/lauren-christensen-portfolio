@@ -1,9 +1,22 @@
 # Lauren Christensen Portfolio
 
-Static portfolio website. No build step required.
+A polished static portfolio for Lauren Christensen.
 
-## Upload
-Upload all files and folders to a public GitHub repository. Import the repository into Vercel and choose **Other** as the framework preset if Vercel does not detect it automatically. Leave Build Command blank and Output Directory blank.
+## Deploying to Vercel
 
-## Update
-Search and replace `hello@laurenchristensen.com` and the placeholder LinkedIn links.
+1. Upload all files and folders in this project to the root of a GitHub repository.
+2. Import the repository into Vercel.
+3. Choose **Other** as the framework preset.
+4. Leave the build command and output directory blank.
+5. Deploy.
+
+## Update before sharing
+
+Search the project for:
+- `hello@laurenchristensen.com`
+- `LinkedIn placeholder`
+
+Replace those values with Lauren's current contact information.
+
+The resume link expects:
+`resume/lauren-christensen-resume.pdf`
