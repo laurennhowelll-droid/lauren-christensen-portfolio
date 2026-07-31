@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order &amp; Inventory Automation | Lauren Christensen</title>
+  <meta name="description" content="Connecting Shopify, n8n, and Airtable to automate customer matching, order creation, unit-level records, and sequential inventory assignment.">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/site.js" defer></script>
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a class="wordmark" href="/">
+      <span class="wordmark-mark">LC</span>
+      <span>Lauren Christensen</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/projects/">Selected Work</a>
+      <a href="/#systems">Systems</a>
+      <a href="/#contact" class="nav-cta">Let’s Connect</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main">
+    <section class="case-hero section">
+      <div class="shell">
+        <a class="back-link" href="/projects/">← All selected work</a>
+        <div class="case-hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Automation & Systems Architecture</p>
+            <h1>Order & Inventory Automation</h1>
+            <p class="hero-lede">Connecting Shopify, n8n, and Airtable to automate customer matching, order creation, unit-level records, and sequential inventory assignment.</p>
+          </div>
+          <div class="case-meta reveal"><div><span>Role</span><strong>Systems designer & implementer</strong></div><div><span>Business</span><strong>Limited-edition ecommerce</strong></div><div><span>Workflow</span><strong>Shopify → n8n → Airtable</strong></div><div><span>Complexity</span><strong>Multi-item and multi-quantity orders</strong></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="case-body section no-top">
+      <div class="shell case-content">
+        <section class="case-section reveal"><p class="eyebrow">The challenge</p><h2>What needed to change</h2><p class="large-copy">Each physical product needed its own numbered inventory record, even when a customer bought multiple units in a single Shopify line item. The workflow also had to match or create customers, preserve order relationships, select the next available product item, and prevent duplicate allocation.</p></section>
+        <section class="case-section reveal"><p class="eyebrow">My role</p><h2>What I owned</h2><p class="large-copy">I designed the Airtable data model, mapped Shopify order data, built the n8n logic, troubleshot linked-record and quantity handling, and validated the full workflow using multi-unit test orders.</p></section>
+        <section class="case-section reveal"><p class="eyebrow">The approach</p><h2>How I worked through it</h2><div class="approach-list"><div class='approach-item'><span>01</span><div><h3>Normalize the order</h3><p>Prepared Shopify order data so customer, order, line-item, and quantity information could move reliably through the automation.</p></div></div><div class='approach-item'><span>02</span><div><h3>Match the customer</h3><p>Used email first with a normalized phone fallback to find or create the correct Airtable customer.</p></div></div><div class='approach-item'><span>03</span><div><h3>Expand by quantity</h3><p>Converted each Shopify line item into one unit-level record per purchased product.</p></div></div><div class='approach-item'><span>04</span><div><h3>Allocate inventory</h3><p>Searched for the first available product item by SKU, linked it to the order item, and marked it unavailable.</p></div></div></div></section>
+        
+        <section class="case-section workflow-section">
+          <p class="eyebrow">System flow</p>
+          <div class="large-flow">
+            <span>Shopify order</span><i>→</i><span>n8n trigger</span><i>→</i><span>Customer match</span><i>→</i><span>Airtable order</span><i>→</i><span>Expand quantity</span><i>→</i><span>Allocate inventory</span>
+          </div>
+        </section>
+        <section class="case-section reveal"><p class="eyebrow">Results</p><h2>What changed</h2><div class="results-grid"><div class='result-chip'>One Airtable order item created per physical unit</div><div class='result-chip'>Sequential inventory allocation validated</div><div class='result-chip'>Multi-quantity orders handled correctly</div><div class='result-chip'>Manual assignment removed from the order workflow</div><div class='result-chip'>Clear relational links across customers, orders, order items, and product items</div></div></section>
+        <section class="case-section reveal"><p class="eyebrow">Tools & capabilities</p><div class="tool-list case-tools"><span>Shopify</span><span>n8n</span><span>Airtable</span><span>JavaScript</span><span>JSON</span><span>REST concepts</span><span>Data modeling</span></div></section>
+        <section class="case-section lesson reveal"><p class="eyebrow">What I learned</p><blockquote>The most important design decision was separating a Shopify line item from a physical unit. Once quantity was expanded into unit-level records, inventory allocation became reliable and auditable.</blockquote></section>
+        <a class="next-project reveal" href="/projects/airtable-operating-system.html"><span>Next project</span><strong>Airtable Business Operating System →</strong></a>
+      </div>
+    </section>
+    </main>
+  
+<footer>
+  <div class="shell footer-grid">
+    <div>
+      <strong>Lauren Christensen</strong>
+      <p>Marketing operations, process engineering, automation, and ecommerce.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="mailto:hello@laurenchristensen.com">hello@laurenchristensen.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
